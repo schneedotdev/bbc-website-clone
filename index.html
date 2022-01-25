@@ -4,69 +4,143 @@
     <head>
         <title>BBC Website</title>
         <link rel="stylesheet" href="assets/stylesheets/index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
     </head>
     <body>
         <header class="primary-header">
             <section class="primary-header-container">
                 <h1 class="logo">
                     <a class="homepage-link" href="index.html" alt="link to homepage">
-                        <img src="assets/images/home/bbc-logo.png" alt="BBC logo">
+                        <img src="assets/images/primary-header/bbc-logo.png" alt="BBC logo">
                     </a>
                 </h1>
 
                 <section class="sign-in">
-                    <a id="sign-in-link" href="https://account.bbc.com/signin?realm=%2F&clientId=Account&context=homepage&ptrt=https%3A%2F%2Fwww.bbc.com%2F&userOrigin=HOMEPAGE_GNL&isCasso=false&action=sign-in&redirectUri=https%3A%2F%2Fsession.bbc.com%2Fsession%2Fcallback%3Frealm%3D%2F&service=IdSignInService&nonce=xTWamhTM-aJqEZPNi3wEy_KNFRDY3C24B-Ek" alt="bbc log in">
-                        <img src="assets/images/home/user-icon.png" alt="user login">
+                    <a class="sign-in-link" href="https://account.bbc.com/signin?realm=%2F&clientId=Account&context=homepage&ptrt=https%3A%2F%2Fwww.bbc.com%2F&userOrigin=HOMEPAGE_GNL&isCasso=false&action=sign-in&redirectUri=https%3A%2F%2Fsession.bbc.com%2Fsession%2Fcallback%3Frealm%3D%2F&service=IdSignInService&nonce=xTWamhTM-aJqEZPNi3wEy_KNFRDY3C24B-Ek" alt="bbc log in">
+                        <img src="assets/images/primary-header/user-icon.png" alt="user login">
                         <span class="nav-text">Sign In</span>
                     </a>
                 </section>
     
                 <nav class="primary-nav">
                     <ul class="nav-list">
-                        <li>
+                        <li class="homepage-li">
                             <a class="homepage-link" href="home.html"><span class="nav-text">Home</span></a>
                         </li>
-                        <li>
+                        <li class="news-li">
                             <a class="news-link" href="news.html"><span class="nav-text">News</span></a>
                         </li>
-                        <li>
+                        <li class="sport-li">
                             <a class="sport-link" href="sport.html"><span class="nav-text">Sport</span></a>
                         </li>
-                        <li>
+                        <li class="reel-li">
                             <a class="reel-link" href="reel.html"><span class="nav-text">Reel</span></a>
                         </li>
-                        <li>
-                            <a class="worklife-link" href="reel.html"><span class="nav-text">Worklife</span></a>
+                        <li class="worklife-li">
+                            <a class="worklife-link" href="worklife.html"><span class="nav-text">Worklife</span></a>
                         </li>
-                        <li>
-                            <a class="travel-link" href="reel.html"><span class="nav-text">Travel</span></a>
+                        <li class="travel-li">
+                            <a class="travel-link" href="travel.html"><span class="nav-text">Travel</span></a>
                         </li>
-                        <li>
-                            <a class="future-link" href="reel.html"><span class="nav-text">Future</span></a>
+                        <li class="future-li">
+                            <a class="future-link" href="future.html"><span class="nav-text">Future</span></a>
                         </li>
-                        <li>
-                            <a class="culture-link" href="reel.html"><span class="nav-text">Culture</span></a>
+                        <li class="culture-li">
+                            <a class="culture-link" href="culture.html"><span class="nav-text">Culture</span></a>
                         </li>
-                        <li>
-                            <a class="more-link" href="reel.html"><span class="nav-text">More</span></a>
+                        <li class="more-li">
+                            <!-- <label for="select-from-more">More</label>
+                            <select name="select-from-more">
+                                <option value="music">Music</option>
+                                <option value="tv">TV</option>
+                                <option value="bbc-select">BBC Select</option>
+                                <option value="weather">Weather</option>
+                                <option value="sounds">Sounds</option>
+                            </select> -->
+                            <a class="more-link" href="more.html">
+                                <span class="nav-text">More</span>
+                                <img class="dropdown" src="assets/images/primary-header/dropdown-icon.png" alt="dropdown icon">
+                            </a>
+                        </li>
+                        <li class="search-li">
+                            <section class="search">
+                                <input id="search-bar" type="text" placeholder="search">
+                            </section>
                         </li>
                     </ul>
                 </nav> 
             </section>
         </header>
 
-        <section class="welcome-content">
-            <h2 id="welcome-title">Welcome to BBC.com</h2>
+        <section class="welcome-container">
+            <div class="welcome-header">
+                <h2 id="welcome-title">Welcome to BBC.com</h2>
+                <span id="todays-date">Monday, 24 January</span>
+            </div>
+            <!-- <img id="main-img" src="https://ichef.bbc.co.uk/wwhp/624/cpsprodpb/335B/production/_122974131_ussoldiers.jpg" alt="Soldiers Saluting"> -->
 
-
-        </section>
-
-        </section>
-
-        <footer class="primary-footer">
-            <section>
-                <!-- <h2>Sample</h2> -->
+            <section class="welcome-wrapper col-1-2">
+                <section class="welcome-main">
+                    <a href="#">
+                        <div>
+                            <img id="main-img" src="assets/images/welcome-content/soldiers.jpg" alt="Soldiers Saluting">
+                        </div>
+                    </a>
+                </section>
+                <section class="welcome-secondary col-1-2">
+                    <a href="#">
+                        <div>
+                            <img class="welcome-images" src="assets/images/welcome-content/ship.jpg">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div>
+                            <img class="welcome-images" src="assets/images/welcome-content/palin.jpg">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div>
+                            <img class="welcome-images" src="assets/images/welcome-content/actor.jpg">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div>
+                            <img class="welcome-images" src="assets/images/welcome-content/asia.jpg">
+                        </div>
+                    </a>
+                </section>
             </section>
-        </footer>
+        </section>
+        
+        <section class="news-container">
+            <h2 id="news-title">News</h2>
+            <section class="news-wrapper col-1-3">
+                <a href="#">
+                    <div>
+                        <img src="assets/images/news-content/news1.jpg">
+                    </div>
+                </a>
+                <a href="#">
+                    <div>
+                        <img src="assets/images/news-content/news2.jpg">
+                    </div>
+                </a>
+                <a href="#">
+                    <div>
+                        <img src="assets/images/news-content/news3.jpg">
+                    </div>
+                </a>
+            </section>
+        </section>
+
+        </section>
+
+        <!-- <footer class="primary-footer">
+            <section>
+                <h2>Sample</h2>
+            </section>
+        </footer> -->
     </body>
 </html>
