@@ -5,8 +5,8 @@
         <title>BBC Website</title>
         <link rel="stylesheet" href="assets/stylesheets/index.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     </head>
     <body>
         <header class="primary-header">
@@ -51,14 +51,6 @@
                             <a class="culture-link" href="culture.html"><span class="nav-text">Culture</span></a>
                         </li>
                         <li class="more-li">
-                            <!-- <label for="select-from-more">More</label>
-                            <select name="select-from-more">
-                                <option value="music">Music</option>
-                                <option value="tv">TV</option>
-                                <option value="bbc-select">BBC Select</option>
-                                <option value="weather">Weather</option>
-                                <option value="sounds">Sounds</option>
-                            </select> -->
                             <a class="more-link" href="more.html">
                                 <span class="nav-text">More</span>
                                 <img class="dropdown" src="assets/images/primary-header/dropdown-icon.png" alt="dropdown icon">
@@ -66,7 +58,7 @@
                         </li>
                         <li class="search-li">
                             <section class="search">
-                                <input id="search-bar" type="text" placeholder="search">
+                                <input class="search-bar" type="text" placeholder="search">
                             </section>
                         </li>
                     </ul>
@@ -76,37 +68,41 @@
 
         <section class="welcome-container">
             <div class="welcome-header">
-                <h2 id="welcome-title">Welcome to BBC.com</h2>
-                <span id="todays-date">Monday, 24 January</span>
+                <h2 class="welcome-title">Welcome to BBC.com</h2>
+                <span class="todays-date">Monday, 24 January</span>
             </div>
             <!-- <img id="main-img" src="https://ichef.bbc.co.uk/wwhp/624/cpsprodpb/335B/production/_122974131_ussoldiers.jpg" alt="Soldiers Saluting"> -->
 
             <section class="welcome-wrapper col-1-2">
                 <section class="welcome-main">
                     <a href="#">
-                        <div>
-                            <img id="main-img" src="assets/images/welcome-content/soldiers.jpg" alt="Soldiers Saluting">
+                        <div class="welcome-div">
+                            <img class="main-img" src="assets/images/welcome-content/soldiers.jpg" alt="Soldiers Saluting">
+                            <div class="media-content">
+                                <h2>title</h2>
+                                <p>example</p>
+                            </div>
                         </div>
                     </a>
                 </section>
                 <section class="welcome-secondary col-1-2">
                     <a href="#">
-                        <div>
+                        <div class="welcome-div">
                             <img class="welcome-images" src="assets/images/welcome-content/ship.jpg">
                         </div>
                     </a>
                     <a href="#">
-                        <div>
+                        <div class="welcome-div">
                             <img class="welcome-images" src="assets/images/welcome-content/palin.jpg">
                         </div>
                     </a>
                     <a href="#">
-                        <div>
+                        <div class="welcome-div">
                             <img class="welcome-images" src="assets/images/welcome-content/actor.jpg">
                         </div>
                     </a>
                     <a href="#">
-                        <div>
+                        <div class="welcome-div">
                             <img class="welcome-images" src="assets/images/welcome-content/asia.jpg">
                         </div>
                     </a>
@@ -115,7 +111,7 @@
         </section>
         
         <section class="news-container">
-            <h2 id="news-title">News</h2>
+            <h2 class="news-title">News</h2>
             <section class="news-wrapper col-1-3">
                 <a href="#">
                     <div>
